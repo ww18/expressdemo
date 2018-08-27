@@ -10,11 +10,19 @@
 
 {% block content %}
 <form>
-  <div class="form-group">
+  <div id="element1" class="form-group">
     <label for="username">用户名</label>
     <input type="email" class="form-control" id="username" placeholder="用户名">
   </div>
   <button id="btnsubmit" type="button" class="btn btn-info">Submit</button>
 </form>
+<script type="text/javascript">
+	var el1 = document.getElementById('element1');
+	var h1 = '';
+	for(var i = 0; i < 10; i++){
+		h1 = el1.clientHeight;
+	}
+	
+</script>
 
 {% endblock %}
